@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../assets/BGWalk.PNG');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Wrapper tombol */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* jarak antar tombol */
+}
+
+/* Setiap tombol jadi column (gambar di atas, text di bawah) */
+.buttons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Styling gambar tombol */
+.buttons img {
+  width: 120px;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect biar lebih interaktif */
+.buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* Teks di bawah tombol */
+.buttons p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Pesan hasil steps */
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  min-height: 40px;
+}
+
+/* Ground tempat karakter jalan */
+.ground {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Karakter jalan */
+#person {
+  position: absolute;
+  bottom: 20px; /* biar ga nempel layar bawah */
+  left: 0;
+  width: 100px;
+  transition: left 0.3s linear, transform 0.3s linear;
+}
