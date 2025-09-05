@@ -3,7 +3,7 @@ let person = document.getElementById('person');
 let walkBtn = document.getElementById('walkBtn');
 let stopBtn = document.getElementById('stopBtn');
 let resetBtn = document.getElementById('resetBtn');
-let message = document.getElementById('message');
+let messagezz = document.getElementById('messagezz');
 
 let pos = 0;
 let direction = 1; // 1 = kanan, -1 = kiri
@@ -24,24 +24,27 @@ walkBtn.addEventListener('click', () => {
   }
   person.style.left = pos + 'px';
 
-  message.textContent = "Steps: " + steps;
+  messagezz.textContent = "Steps: " + steps;
 });
 
 // Stop button (pakai if else)
 stopBtn.addEventListener('click', () => {
+  person.style.display = "none";
+
   if (steps < 1000) {
-    message.textContent = `You've walked ${steps} steps! This is not yet ideal. Based on health recommendations, humans should walk at least 1000 steps a day.`;
+    messagezz.textContent = `You've walked ${steps} steps! This is not yet ideal. Based on health recommendations, humans should walk at least 1000 steps a day.`;
   } else {
-    message.textContent = `Congrats! You've walked ${steps} steps! This is ideal based on health recommendations — keep it up!`;
+    messagezz.textContent = `Congrats! You've walked ${steps} steps! This is ideal based on health recommendations — keep it up!`;
   }
 });
 
 // Reset button
 resetBtn.addEventListener('click', () => {
+  person.style.display = "block";
   steps = 0;
   pos = 0;
   direction = 1;
   person.style.left = pos + 'px';
   person.style.transform = 'scaleX(1)';
-  message.textContent = "Steps reset to 0!";
+  messagezz.textContent = "Steps reset to 0!";
 });
