@@ -7,11 +7,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <script src="scripts/WaterSimu.js" defer></script>
     <title>Daily Human Needs</title>
 </head>
 <body>
     <a href="lounge.html" class="backButtonz">
         <img src="assets/back.PNG" alt="Back">
     </a>
+
+    <h1>Drink Water</h1>
+    <h3>Goal: 2 Liters per Day</h3>
+
+    <div class="cup">
+        <div class="remained" id="remained">
+            <span id="liters"></span>
+            <small>remained</small>
+        </div>
+
+        <div class="percentage" id="percentage"></div>
+    </div>
+
+    <img src="assets/BigCup.png" alt="Glass Frame" class="glass-frame">
+
+    <p class="text">How many glasses of water that you have drank?</p>
+
+    <div class="cups">
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+        <div class="cup cup-small"><img src="assets/SmallCup-Empty.png" class="small-cup-frame">250ml</div>
+    </div>
+
+    <button id="resetBtn" type="button">
+  <img src="assets/OrangeButton.PNG" alt="">
+  <span class="reset-label">Reset</span>
+</button>
+
+
 </body>
 </html>
