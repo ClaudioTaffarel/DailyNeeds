@@ -1,117 +1,125 @@
 body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-image: url('../assets/BGWalk.PNG');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-  font-family: "Pixelify Sans", sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/BGWalk.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .backButtonz {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 9999;
-  cursor: pointer;
-  display: inline-block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .backButtonz img {
-  width: 50px;
-  height: auto;
-  display: block;
-  transition: transform 0.2s ease;
+    width: 50px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
 }
 
 .backButtonz:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .buttonzz {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
 }
 
-.walkButton, .stopButton, .resetButton {
-  position: relative;
-  transition: transform 0.2s ease;
-  cursor: pointer;
+.walkButton,
+.stopButton,
+.resetButton {
+    position: relative;
+    transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
-.walkButton:hover, .stopButton:hover, .resetButton:hover {
-  transform: scale(1.1);
+.walkButton:hover,
+.stopButton:hover,
+.resetButton:hover {
+    transform: scale(1.1);
 }
 
-.walkButton img, .stopButton img, .resetButton img {
-  display: block;
-  width: 170px;
-  height: auto;
+.walkButton img,
+.stopButton img,
+.resetButton img {
+    display: block;
+    width: 170px;
+    height: auto;
 }
 
 .walkButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(34, 91, 141);
-  font-size: 35px;
-  text-align: center;
-  pointer-events: none;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(34, 91, 141);
+    font-size: 35px;
+    text-align: center;
+    pointer-events: none;
 }
 
 .stopButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(126, 52, 52);
-  font-size: 35px;
-  text-align: center;
-  pointer-events: none;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(126, 52, 52);
+    font-size: 35px;
+    text-align: center;
+    pointer-events: none;
 }
 
 .resetButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(52, 125, 34);
-  font-size: 35px;
-  text-align: center;
-  pointer-events: none;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(52, 125, 34);
+    font-size: 35px;
+    text-align: center;
+    pointer-events: none;
 }
 
 #messagezz {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  color: #ffa155;
-  min-height: 40px;
-  -webkit-text-stroke: 2px rgb(171, 78, 31);
-  text-shadow: 3px 3px 0px rgba(0,0,0,0.9);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffa155;
+    min-height: 40px;
+    -webkit-text-stroke: 2px rgb(171, 78, 31);
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
 }
 
 .ground {
-  position: relative;
-  height: 500px;
+    position: relative;
+    height: 500px;
 }
 
 #person {
-  position: absolute;
-  bottom: 0px;
-  width: 200px;
-  transition: left 0.3s linear, transform 0.3s linear;
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    transition:
+        left 0.3s linear,
+        transform 0.3s linear;
 }

@@ -1,32 +1,32 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url('../assets/BGLounge.PNG');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-  font-family: "Pixelify Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/BGLounge.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .backButtonz {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 9999;
-  cursor: pointer;
-  display: inline-block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .backButtonz img {
-  width: 50px;
-  height: auto;
-  display: block;
-  transition: transform 0.2s ease;
+    width: 50px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
 }
 
 .backButtonz:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .loungeContentzz {
@@ -40,85 +40,90 @@ body {
     position: absolute;
     top: 5%;
     left: 43%;
-    transition: transform 0.2s ease
+    transition: transform 0.2s ease;
 }
 
 .toSleepButton {
     position: absolute;
     bottom: 5%;
     left: 43%;
-    transition: transform 0.2s ease
+    transition: transform 0.2s ease;
 }
 
 .toDrinkButton {
     position: absolute;
     top: 43%;
     right: 17%;
-    transition: transform 0.2s ease
+    transition: transform 0.2s ease;
 }
 
 .toEatButton {
     position: absolute;
     top: 43%;
     left: 17%;
-    transition: transform 0.2s ease
+    transition: transform 0.2s ease;
 }
 
-.toWalkButton:hover, .toSleepButton:hover, .toDrinkButton:hover, .toEatButton:hover {
-  transform: scale(1.1);
+.toWalkButton:hover,
+.toSleepButton:hover,
+.toDrinkButton:hover,
+.toEatButton:hover {
+    transform: scale(1.1);
 }
 
-.toWalkButton img, .toSleepButton img, .toDrinkButton img, .toEatButton img {
-  display: block;
-  width: 230px;
-  height: auto;
+.toWalkButton img,
+.toSleepButton img,
+.toDrinkButton img,
+.toEatButton img {
+    display: block;
+    width: 230px;
+    height: auto;
 }
 
 .toWalkButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(126, 52, 52);
-  font-size: 45px;
-  text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(126, 52, 52);
+    font-size: 45px;
+    text-align: center;
 }
 
 .toSleepButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(162, 93, 55);
-  font-size: 45px;
-  text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(162, 93, 55);
+    font-size: 45px;
+    text-align: center;
 }
 
 .toDrinkButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(34, 91, 141);
-  font-size: 45px;
-  text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(34, 91, 141);
+    font-size: 45px;
+    text-align: center;
 }
 
 .toEatButton p {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgb(52, 125, 34);
-  font-size: 45px;
-  text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(52, 125, 34);
+    font-size: 45px;
+    text-align: center;
 }
-
