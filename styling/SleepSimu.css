@@ -12,19 +12,19 @@ body {
 }
 
 .backButtonz {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 9999;
-  cursor: pointer;
-  display: inline-block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .backButtonz img {
-  width: 50px;
-  height: auto;
-  display: block;
-  transition: transform 0.2s ease;
+    width: 50px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
 }
 
 .backButtonz:hover img {
