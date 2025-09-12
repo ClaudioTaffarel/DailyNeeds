@@ -5,6 +5,7 @@ const percentage = document.getElementById('percentage')
 const remained = document.getElementById('remained')
 const resetBtn = document.getElementById('resetBtn')
 const cupHeight = cup.clientHeight
+const textAlert = document.querySelector('.text')
 
 updateBigCup()
 
@@ -39,6 +40,7 @@ function updateBigCup() {
     if(fullCups === 0) {
         percentage.style.visibility = 'hidden'
         percentage.style.height = 0
+        textAlert.innerText = "How many glasses of water have you drunk?"
     } else {
         percentage.style.visibility = 'visible'
         percentage.style.height = `${fullCups / totalCups * cupHeight}px`
@@ -49,7 +51,7 @@ function updateBigCup() {
         remained.style.visibility = 'hidden'
         remained.style.height = 0
 
-        alert("Congrats! You reached your goal: 2 Liters!");
+        textAlert.innerText = "🎉 Congrats! You reached your goal: 2 Liters!"
     } else {
         remained.style.visibility = 'visible'
         liters.innerText = `${2 - (fullCups * 250 / 1000)}L`
