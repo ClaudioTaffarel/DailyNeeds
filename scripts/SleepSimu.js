@@ -31,14 +31,14 @@ document.getElementById("sleepForm").addEventListener("submit", function(event) 
     else { minHours = 7; maxHours = 8; }
 
     if (sleepDuration < minHours) {
-        result.textContent = `Waduh... Durasi tidur kamu ${sleepDuration.toFixed(1)} jam - Kurang dari ideal (${minHours}-${maxHours} jam).`;
+        result.textContent = `Ouch... Your sleep duration is  ${sleepDuration.toFixed(1)} hours - less than the ideal (${minHours}-${maxHours} hours).`;
         result.style.color = "orange";
 
     } else if (sleepDuration > maxHours) {
-        result.textContent = `Wah, Durasi tidur kamu ${sleepDuration.toFixed(1)} jam - Melebihi ideal (${minHours}-${maxHours} jam).`;
+        result.textContent = `Oops, You slept for ${sleepDuration.toFixed(1)} hours - More than the ideal (${minHours}-${maxHours} hours).`;
         result.style.color = "yellow";
     } else {
-        result.textContent = `Mantap ! Durasi tidur kamu ${sleepDuration.toFixed(1)} jam - Ideal !`;
+        result.textContent = `Perfect ! Your sleep duration is ${sleepDuration.toFixed(1)} hours - Very ideal !`;
         result.style.color = "lightgreen";
     }
 });
