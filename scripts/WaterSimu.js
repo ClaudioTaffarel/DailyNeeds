@@ -40,7 +40,6 @@ function updateBigCup() {
     if(fullCups === 0) {
         percentage.style.visibility = 'hidden'
         percentage.style.height = 0
-        textAlert.innerText = "How many glasses of water have you drunk?"
     } else {
         percentage.style.visibility = 'visible'
         percentage.style.height = `${fullCups / totalCups * cupHeight}px`
@@ -56,8 +55,6 @@ function updateBigCup() {
         remained.style.visibility = 'visible'
         liters.innerText = `${2 - (fullCups * 250 / 1000)}L`
     }
-
-    
 }
 
 resetBtn.addEventListener('click', resetCups)

@@ -1,4 +1,5 @@
 body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     background-image: url('../assets/BGLounge.PNG');
@@ -13,7 +14,7 @@ body {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 9999;
+    z-index: 100;
     cursor: pointer;
     display: inline-block;
 }
@@ -37,6 +38,9 @@ body {
 }
 
 .toWalkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 5%;
     left: 43%;
@@ -44,6 +48,9 @@ body {
 }
 
 .toSleepButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 5%;
     left: 43%;
@@ -51,6 +58,9 @@ body {
 }
 
 .toDrinkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 43%;
     right: 17%;
@@ -58,23 +68,20 @@ body {
 }
 
 .toEatButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 43%;
     left: 18%;
     transition: transform 0.2s ease;
 }
 
-.toWalkButton:hover,
-.toSleepButton:hover,
-.toDrinkButton:hover,
-.toEatButton:hover {
+.toWalkButton:hover, .toSleepButton:hover, .toDrinkButton:hover, .toEatButton:hover {
     transform: scale(1.1);
 }
 
-.toWalkButton img,
-.toSleepButton img,
-.toDrinkButton img,
-.toEatButton img {
+.toWalkButton img, .toSleepButton img, .toDrinkButton img, .toEatButton img {
     display: block;
     width: 230px;
     height: auto;
@@ -83,9 +90,6 @@ body {
 .toWalkButton p {
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0;
     color: rgb(126, 52, 52);
     font-size: 45px;
@@ -95,9 +99,6 @@ body {
 .toSleepButton p {
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0;
     color: rgb(162, 93, 55);
     font-size: 45px;
@@ -107,9 +108,6 @@ body {
 .toDrinkButton p {
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0;
     color: rgb(34, 91, 141);
     font-size: 45px;
@@ -119,9 +117,6 @@ body {
 .toEatButton p {
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0;
     color: rgb(52, 125, 34);
     font-size: 45px;

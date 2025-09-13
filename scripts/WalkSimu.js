@@ -1,47 +1,54 @@
-let steps = 0;
-let person = document.getElementById('person');
-let walkBtn = document.getElementById('walkBtn');
-let stopBtn = document.getElementById('stopBtn');
-let resetBtn = document.getElementById('resetBtn');
-let messagezz = document.getElementById('messagezz');
+const guy = document.getElementById('person');
+const walkBtn = document.getElementById('walkBtn');
+const stopBtn = document.getElementById('stopBtn');
+const resetBtn = document.getElementById('resetBtn');
+const messagezz = document.getElementById('messagezz');
 
-let pos = 0;
+let steps = 0;
+let positionn = 0;
 let direction = 1;
-const stepSize = 50;
+const stepSize = 100;
 const stepValue = 100;
 
 walkBtn.addEventListener('click', () => {
+    guy.style.display = 'block';
     steps += stepValue;
+    positionn += stepSize * direction;
 
-    pos += stepSize * direction;
-    if (pos >= window.innerWidth - 120) {
+    if (positionn >= 1300) {
         direction = -1;
-        person.style.transform = 'scaleX(-1)';
-    } else if (pos <= 0) {
+        guy.style.transform = 'scaleX(-1)';
+    } else if (positionn <= 0) {
         direction = 1;
-        person.style.transform = 'scaleX(1)';
+        guy.style.transform = 'scaleX(1)';
     }
-    person.style.left = pos + 'px';
 
+    guy.style.left = positionn + 'px';
     messagezz.textContent = 'Steps: ' + steps;
 });
 
 stopBtn.addEventListener('click', () => {
-    person.style.display = 'none';
+    guy.style.display = 'none';
 
-    if (steps < 1000) {
-        messagezz.textContent = `You've walked ${steps} steps! This is not yet ideal. Based on health recommendations, humans should walk at least 1000 steps a day.`;
+    if (steps < 5000) {
+        messagezz.textContent = `You've walked ${steps} steps! This is considered sedentary (not very active). Try to move more for better health.`;
+    } else if (steps >= 5000 && steps <= 7499) {
+        messagezz.textContent = `You've walked ${steps} steps! This is considered low active. A good start, but you can aim for more.`;
+    } else if (steps >= 7500 && steps <= 9999) {
+        messagezz.textContent = `You've walked ${steps} steps! This is considered somewhat active. You're on the right track!`;
+    } else if (steps >= 10000 && steps <= 12499) {
+        messagezz.textContent = `You've walked ${steps} steps! This is considered active. Great job! keep maintaining this level!`;
     } else {
-        messagezz.textContent = `Congrats! You've walked ${steps} steps! This is ideal based on health recommendations — keep it up!`;
+        messagezz.textContent = `You've walked ${steps} steps! This is considered highly active. Excellent effort, keep it up!`;
     }
 });
 
 resetBtn.addEventListener('click', () => {
-    person.style.display = 'block';
+    guy.style.display = 'block';
     steps = 0;
-    pos = 0;
+    positionn = 0;
     direction = 1;
-    person.style.left = pos + 'px';
-    person.style.transform = 'scaleX(1)';
+    guy.style.left = positionn + 'px';
+    guy.style.transform = 'scaleX(1)';
     messagezz.textContent = 'Steps reset to 0!';
 });
