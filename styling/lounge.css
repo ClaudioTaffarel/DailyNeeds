@@ -60,7 +60,7 @@ body {
 .toEatButton {
     position: absolute;
     top: 43%;
-    left: 17%;
+    left: 18%;
     transition: transform 0.2s ease;
 }
 
