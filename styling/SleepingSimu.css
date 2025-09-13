@@ -1,0 +1,143 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/BGSleep.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.backButtonz {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.backButtonz img {
+    width: 50px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.backButtonz:hover img {
+    transform: scale(1.1);
+}
+
+.contentzz {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    left: 150px;
+}
+
+.inputSectionz {
+    height: 400px;
+    width: 400px;
+    background-image: url(../assets/SleepBox.PNG);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
+}
+
+.inputSectionz h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0px;
+    color: rgb(37, 116, 116)
+}
+
+.inputSectionz .inputss {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inpAge, .inpBedTime, .inpWakeTime {
+    background-color: rgb(199, 243, 236);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.inputzz {
+    height: 30px;
+    width: 150px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.buttonz {
+    display: flex;
+    gap: 30px;
+    margin-top: 23px;
+    justify-content: center;
+}
+
+.reset {
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: lightcoral;
+}
+
+.check {
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: lightgreen;
+}
+
+.reset:hover, .check:hover {
+    transform: scale(1.1);
+}
+
+.inpAge:hover, .inpBedTime:hover, .inpWakeTime:hover {
+    transform: scale(1.03);
+}
+
+.resultSectionz {
+    height: 150px;
+    width: 400px;
+    background-image: url(../assets/miniNotez.PNG);
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
+}
+
+.resultText {
+    font-size: 18px;
+    line-height: 1.8; 
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}

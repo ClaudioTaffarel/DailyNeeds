@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styling/SleepingSimu.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet"
+        />
+        <title>Sleep Simulator</title>
+    </head>
+    <body>
+        <a href="lounge.html" class="backButtonz">
+            <img src="assets/back.PNG" alt="Back" />
+        </a>
+
+        <div class="contentzz">
+            <div class="inputSectionz">
+                <h1>Sleep Time Checker!</h1>
+                <div class="inputss">
+                    <div class="inpAge">
+                        <label>Age (years):</label>
+                        <input type="number" id="age" placeholder="Input Age.." min="0" class="inputzz" />
+                    </div>
+
+                    <div class="inpBedTime">
+                        <label>When did you sleep?</label>
+                        <input type="time" id="bedTime" min="0" class="inputzz" />
+                    </div>
+
+                    <div class="inpWakeTime">
+                        <label>When did you wake up?</label>
+                        <input type="time" id="wakeTime" min="0" class="inputzz" />
+                    </div>
+                </div>
+                <div class="buttonz">
+                    <button class="reset">Reset</button>
+                    <button class="check">Check</button>
+                </div>
+            </div>
+
+            <div class="resultSectionz">
+                <p id="result" class="resultText"></p>
+            </div>
+        </div>
+
+        <script src="scripts/SleepingSimu.js"></script>
+    </body>
+</html>
