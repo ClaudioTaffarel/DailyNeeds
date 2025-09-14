@@ -6,6 +6,7 @@ const remained = document.getElementById('remained')
 const resetBtn = document.getElementById('resetBtn')
 const cupHeight = cup.clientHeight
 const textAlert = document.querySelector('.text')
+const defaultText = textAlert.innerText
 
 updateBigCup()
 
@@ -65,6 +66,8 @@ function resetCups() {
     const img = cup.querySelector('.small-cup-frame');
     if (img) img.src = 'assets/SmallCup-Empty.png';
   });
+
+  textAlert.innerText = defaultText;
 
   updateBigCup();
 }
