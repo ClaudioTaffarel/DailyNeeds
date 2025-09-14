@@ -8,11 +8,10 @@ let steps = 0;
 let positionn = 0;
 let direction = 1;
 const stepSize = 100;
-const stepValue = 100;
 
 walkBtn.addEventListener('click', () => {
     guy.style.display = 'block';
-    steps += stepValue;
+    steps += stepSize;
     positionn += stepSize * direction;
 
     if (positionn >= 1300) {

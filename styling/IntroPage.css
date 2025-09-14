@@ -65,8 +65,8 @@ body {
     }
     50% {
         transform: translateY(-15px);
-    } /* naik 15px */
+    }
     100% {
         transform: translateY(0);
-    } /* balik lagi */
+    }
 }

@@ -83,11 +83,11 @@ btnCalculate.addEventListener("click", () => {
     let conclusion = "";
 
     if (totalCalories < bmr - 100) {
-        conclusion = "Kalori yang dimakan masih kurang dari ideal.";
+        conclusion = "The calories consumed are still less than ideal.";
     } else if (totalCalories > bmr + 100) {
-        conclusion = "Kalori yang dimakan melebihi ideal.";
+        conclusion = "The calories consumed exceed the ideal.";
     } else {
-        conclusion = "Kalori yang dimakan sudah mendekati ideal.";
+        conclusion = "The calories consumed are already close to ideal.";
     }
 
     const resultzz = document.createElement("div");
