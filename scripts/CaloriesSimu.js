@@ -92,6 +92,6 @@ btnCalculate.addEventListener("click", () => {
 
     const resultzz = document.createElement("div");
     resultzz.classList.add("conclusion");
-    resultzz.textContent = `Kesimpulan: ${conclusion} (BMR: ${Math.round(bmr)} cal, Total Makanan: ${totalCalories} cal)`;
+    resultzz.textContent = `Conclusion: ${conclusion} (BMR: ${Math.round(bmr)} cal, Total Calories: ${totalCalories} cal)`;
     foodList.append(resultzz);
 });

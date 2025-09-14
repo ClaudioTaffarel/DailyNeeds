@@ -50,9 +50,6 @@ body {
 .startButtonz p {
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0;
     color: rgb(167, 96, 37);
     font-size: 35px;
