@@ -61,13 +61,13 @@ function updateBigCup() {
 resetBtn.addEventListener('click', resetCups)
 
 function resetCups() {
-  smallCups.forEach(cup => {
-    cup.classList.remove('full');
-    const img = cup.querySelector('.small-cup-frame');
-    if (img) img.src = 'assets/SmallCup-Empty.png';
-  });
+    smallCups.forEach(cup => {
+        cup.classList.remove('full');
+        const img = cup.querySelector('.small-cup-frame');
+        if (img) img.src = 'assets/SmallCup-Empty.png';
+    });
 
-  textAlert.innerText = defaultText;
+    textAlert.innerText = defaultText;
 
-  updateBigCup();
+    updateBigCup();
 }
